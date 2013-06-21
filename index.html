@@ -1,65 +1,168 @@
-<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>cormac.github.io by cormac</title>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>cormac.github.io</h1>
-        <p>pages</p>
+  <title>Cromac</title>
+  <style type="text/css" media="screen">
+  * {
+    box-sizing: border-box;
+  }
+    .logo-container {
+      width: 20em;
+      height: 20em;
+      margin: auto;
+      position: relative;
+    }
+    .outer-circle-white {
+      border: 19px solid white;
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      margin-top: -5%;
+      margin-left: -5%;
+      background-color:none;
+      z-index: 5;
+      position: absolute;
+      
+     /* background-color:black;*/
+    }
+    .outer-circle {
+      border: 5px solid black;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      z-index: 6;
+      position: absolute;
+     /* background-color:black;*/
+    }
+    .inner-circle {
+      border: 3px solid black;
+      position: absolute;
+      width: 5em;
+      height: 5em;
+      top: 7.5em;
+      left: 7.5em;
+      border-radius: 50%;
+      background-color: black;
+    }
+    .middle-circle {
+      position: absolute;
+      border: 1em solid black;
+      width: 10em;
+      height: 10em;
+      top: 5em;
+      left: 5em;
+      border-radius: 50%;
+    }
+    .black-cover {
+      background-color:black;
+      width: 5.2em;
+      top: 11.75em;
+      left: 7.3em;
+      height: 8em;
+      z-index: 1;
+      position: absolute;
+    }
+    .right-white-small {
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 50%;
+      background-color: white;
+      left: 12em;
+      top: 11em;
+      z-index: 2;
+      position: absolute;
+    }
+    .right-black-small {
+      height: 1.6em;
+      -webkit-transform: rotate(315deg);
+      width: 1.5em;
+      background-color: black;
+      left: 11.6em;
+      top: 11.5em;
+      z-index: 1;
+      position: absolute;
+    }
+    .left-white-small {
+      height: 1.5em;
+      width: 1.5em;
+      border-radius: 50%;
+      background-color: white;
+      left: 6.5em;
+      top: 11em;
+      z-index: 2;
+      position: absolute;
+    }
+    .left-black-small {
+      height: 1.6em;
+      -webkit-transform: rotate(45deg);
+      width: 1.5em;
+      background-color: black;
+      left: 6.8em;
+      top: 11.4em;
+      z-index: 1;
+      position: absolute;
+    }
+    .right-white-large {
+      height: 4.65em;
+      width: 4.65em;
+      border-radius: 50%;
+      background-color: white;
+      left: 12.95em;
+      top: 12.8em;
+      z-index: 2;
+      position: absolute;
+    }
+    .left-white-large {
+      height: 4.65em;
+      width: 4.65em;
+      border-radius: 50%;
+      background-color: white;
+      left: 2.45em;
+      top: 12.8em;
+      z-index: 2;
+      position: absolute;
+    }
 
 
-        <p class="view"><a href="https://github.com/cormac">View My GitHub Profile</a></p>
-
-      </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
+    .right-black-large {
+      height: 4.85em;
+      -webkit-transform: rotate(315deg);
+      width: 4.85em;
+      background-color: black;
+      left: 10.9em;
+      top: 14.5em;
+      z-index: 1;
+      position: absolute;
+    }
+    .left-black-large {
+      height: 4.85em;
+      -webkit-transform: rotate(45deg);
+      width: 4.85em;
+      background-color: black;
+      left: 4.18em;
+      top: 14.5em;
+      z-index: 1;
+      position: absolute;
+    }
     
-  </body>
+  </style>
+  
+</head>
+<div class="logo-container">
+  <div class="outer-circle-white"> </div>
+  <div class="outer-circle"> </div>
+  <div class="inner-circle"></div>
+  <div class="middle-circle"></div>
+  <div class="black-cover"></div>
+  <div class="left-white-small"></div>
+  <div class="left-black-small"></div>
+  <div class="right-white-small"></div>
+  <div class="right-black-small"></div>
+  <div class="left-white-large"></div>
+  <div class="right-white-large"></div>
+  <div class="left-black-large"></div>
+  <div class="right-black-large"></div>
+  
+</div>
 </html>
